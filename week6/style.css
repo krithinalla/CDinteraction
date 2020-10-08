@@ -1,0 +1,164 @@
+
+body {
+    display: block;
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+.navbar{
+  position: fixed;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  align-items: baseline, center;
+  z-index:500px;
+  
+
+}
+
+.logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+#navigation-container {
+  width: 10px;
+  margin: 0 ;
+  height: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+
+
+}
+
+li {
+  float: right;
+  
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 56px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e6ffff;
+
+}
+
+/*Darlene*/
+h1{
+    font-size: 400%;
+    position: relative;
+    left: 150px;
+    top: 100px;
+}
+
+h2{
+  position: relative;
+    left: 250px;
+    top: 60px;
+    font-size: 400%;
+    z-index: 100
+}
+
+h3{
+  position: relative;
+    left: 350px;
+    top: 20px;
+    font-size: 400%;
+    z-index: 100
+}
+
+p {
+  position: absolute;
+    top: 40%;
+    left: 8%;
+    z-index: 20;
+    padding-top: 24%;
+    padding-right: 60%;
+    margin: 0%;
+    text-align: left;
+    font-size: 15px;
+}
+
+iframe{
+  position: relative;
+    left: 40%;
+    bottom: 400px;
+    width: 900px;
+    height: 800px;
+    z-index: 1
+}
+
+/*.try{
+  height: -400px;
+}*/
+
+/*Xena */
+
+
+.gallery1 {
+  width: 500px;
+  padding: 100px;
+  margin: 10px;
+
+}
+
+.post1 {
+  font-size: 100%;
+  padding: 0;
+  position: relative;
+  left: -30%;
+}
+
+.post2 p {
+  position: relative;
+  text-align: left;
+  font-size: 80%;
+}
+
+.gallery2 {
+  position: relative;
+    left: 125%;
+  bottom: 700px;
+    width: 900px;
+    height: 800px;
+
+}
+/*Fatima*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+
+.Fatima p {
+  text-align: left;
+  border: 5px solid lightblue;
+  padding: 10px;
+  position: relative;
+  right: 300px;
+  
+
+}
+
+img {
+  padding-bottom: 50px;
+  justify-content: flex-end
+
+}
