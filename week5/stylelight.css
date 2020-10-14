@@ -1,0 +1,10 @@
+.first {
+	position: relative;
+	color: black;
+}
+
+.text1{
+	position: absolute;
+	top: 8px;
+  left: 16px;
+}
