@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="main.js"></script>
+	<title>Document</title>
+</head>
+<style type="text/css">
+	html,body{
+		text-align: middle;
+
+	}
+
+	input,div{
+		margin: 2%;
+	}
+	#shapeshifter{
+		width: 3em;
+		height: 5em;
+		background-color: #000080;
+		color: white;
+	}
+
+	#welcome{
+		background-color: red;
+	}
+</style>
+
+<body>
+<input placeholder="Which State Are You Registered In?" type="text" name="name">
+<div id = 'welcome'>
+	<img src="arrow.svg">
+</div>
+<div id = 'shapeshifter'>If You're In New York</div>
+<input placeholder="what number are u?" type="text" name="guess">
+<div id="results">4</div>
+</body>
+
+<script type="text/javascript">
+
+	let name = document.querySelector('input[name="name"]')
+	let welcome  = document.querySelector('#welcome')
+	let shapeshifter  = document.querySelector('#shapeshifter')
+	let guess  = document.querySelector('input[name="guess"]')
+	let results  = document.querySelector('#results')
+
+	console.log(name)
+
+	welcome.onclick=function(){
+		if(welcome.style.backgroundColor=='red'){
+			welcome.style.backgroundColor='blue'
+		}else {
+			welcome.style.backgroundColor='red'
+		}
+		
+	}
+
+	shapeshifter.onclick=function(){
+		if(shapeshifter.style.backgroundColor=='#C0C0C0'){
+			shapeshifter.style.backgroundColor='#000080'
+		}else {
+			shapeshifter.style.backgroundColor='#C0C0C0'
+		}
+		
+	}
+
+	shapeshifter.onmouseover=function(){
+		shapeshifter.innerHTML='vote pls'
+		shapeshifter.style.width='5em'
+	}
+
+	shapeshifter.onmouseout = function(){
+		shapeshifter.innerHTML="If You're In New York"
+		shapeshifter.style.width='3em'
+	}
+
+	guess.onchange=function(){
+		if((guess.value=='100') ||(guess.value == '1000') ){
+			results.innerHTML="u won"
+		} else{
+			results.innerHTML=":("
+		}
+	}
+
+</script>
+
+</html>
