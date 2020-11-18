@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"> </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Document</title>
+</head>
+<style type="text/css">
+
+*{
+	margin: 0;
+	top: 0;
+}	
+
+
+.text1 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: white;
+	padding: 25%;
+	padding-left: 35%;
+
+	text-align: center;
+}
+
+.phone1 {
+	display: none;
+}
+
+.phone2 {
+	display: none;
+}
+.phone3 {
+	display: none;
+}
+.phone4 {
+	display: none;
+}
+.phone5 {
+	display: none;
+}
+.phone6 {
+	display: none;
+}
+.phone7 {
+	display: none;
+}
+.phone8 {
+	display: none;
+}
+.phone9 {
+	display: none;
+}
+.phone10 {
+	display: none;
+}
+.phone11 {
+	display: none;
+}
+.phone12 {
+	display: none;
+}
+.phone13 {
+	display: none;
+}
+
+
+
+@media only screen and (max-width: 500px){
+	.sleep {
+		display: none;
+	}
+
+	.phone1{
+		display: block;
+	}
+
+	/*.text1 h1{
+		top: 20%;
+		right: 3%;
+	}*/
+
+	.openhead {
+		display: none;
+	}
+
+	.phone2 {
+		display: block;
+	}
+
+	.crosseyes {
+		display: none;
+	}
+
+	.phone3 {
+		display: block;
+	}
+
+
+	.mare {
+		display: none;
+	}
+
+	.phone4 {
+		display: block;
+	}
+
+	.bigants {
+		display: none;
+	}
+
+	.phone5 {
+		display: block;
+	}
+
+	.shapes {
+		display: none;
+	}
+
+	.phone6 {
+		display: block;
+	}
+
+	.voice {
+		display: none;
+	}
+
+	.phone7{
+		display: block;
+	}
+
+	.shadow {
+		display: none;
+	}
+
+	.phone8{
+		display: block;
+	}
+
+	.time {
+		display: none;
+	}
+
+	.phone9{
+		display: block;
+	}
+
+	.round {
+		display: none;
+	}
+
+	.phone10{
+		display: block;
+	}
+
+	.hope {
+		display: none;
+	}
+
+	.phone11{
+		display: block;
+	}
+
+	.die {
+		display: none;
+	}
+
+	.phone12{
+		display: block;
+	}
+
+	.hea {
+		display: none;
+	}
+	.phone13{
+		display: block;
+	}
+
+}
+
+.text2 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	top: 45%;
+	width: 100%;
+	padding-left: 2%;
+	
+}
+
+.text3 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	top: 45%;
+	width: 100%;
+
+	
+}
+
+.hide {
+	display:none;
+	right: 5%;
+	top: 65%;
+	position: absolute;
+	z-index: 1;
+}
+
+
+
+.text4 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	top: 60%;
+	left: 1%;
+	width: 100%;
+
+	
+}
+
+.text5 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	top: 40%;
+	width: 100%;
+	z-index: 2;
+
+	
+}
+
+.hideant {
+	display:none;
+	position: absolute;
+	z-index: 1;
+}
+
+/*.ant:hover .hideant {
+	display: block;
+}*/
+
+.show{
+	display: block;
+}
+
+.text6 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	top: 45%;
+	width: 100%;
+
+	
+}
+
+.objs {
+	position: absolute;
+}
+
+
+.text9 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #24578a;
+	text-align: center;
+	top: 45%;
+	width: 100%;
+
+	
+}
+
+.sec9 .word {
+	display: inline-block;
+	line-height: 1em;
+}
+
+
+
+.text10 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	top: 40%;
+	width: 100%;
+
+	
+}
+
+.text12 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #24578a;
+	text-align: center;
+	top: 45%;
+	width: 100%;
+
+	
+}
+
+.text13 h1 {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #24578a;
+	text-align: center;
+	top: 45%;
+	width: 100%;
+
+	
+}
+.wholesection{
+	position: relative;
+
+}
+
+.section1{
+	top: 0;
+	margin: 0;
+	left: 0;
+	overflow-x: hidden;
+	line-height: 0;
+}
+
+
+
+
+</style>
+<body>
+	<!-- Section 1 -->
+	<div class="text1">
+		<h1>
+			
+			The death throes done, <br>
+	he lay now alone-alone and broken and rejected - and <br>
+	then he sank into<br>sleep
+				
+			
+		</h1>
+	</div>
+
+
+	<div class="section1">
+		<div class="sleeping">
+			<img src="1x/Artboard10.png" class = "sleep">
+			<img src="phone/1.png" class="phone1">
+		</div>
+	</div>
+
+<!-- Section 2 -->
+<div class="wholesection">
+<div class="text2">
+		<h1 class="sec2">
+			He told himself that he<br>shouldn't think too much<br>about the night before, and,<br>cheered by that resolve ,<br>
+			he unhurriedly dressed for<br>work.
+		</h1>
+	</div>
+
+
+	<div class="section1">
+		<div class="head">
+			<img src="1x/Artboard11.png" class="openhead">
+			<img src="phone/2.png" class="phone2">
+		</div>
+	</div>
+</div>
+<!-- section 3 -->
+<div class="wholesection">
+<div class="text3">
+		<h1 class="sec3">
+			He seemed to notice that the<br>
+			others turned their eyes away;<br>perhaps they already knew that<br>he was<br>
+			<span class="ded" style="text-decoration: underline">dead.</span>
+		</h1>
+		
+	</div>
+
+
+	<div class="section1">
+		<div class="deadeyes">
+			<div class="hide"><img src="1x/Asset8.png"></div>
+			<img src="1x/Artboard2.png" class="crosseyes">
+			<img src="phone/3.png" class="phone3">
+
+		</div>
+	</div>
+</div>
+<!-- section 4 -->
+<div class="wholesection">
+<div class="text4">
+		<h1 class="sec4">
+			That night the nightmares<br>
+			began; he was left without the<br>slightest memory of them‐just<br>the fear that they'd return.
+		</h1>
+	</div>
+
+
+	<div class="section1">
+		<div class="nightmares">
+			<img src="1x/Artboard.png" class="mare">
+			<img src="phone/4.png" class="phone4">
+		</div>
+	</div>
+</div>
+<!-- section 5 -->
+<div class="wholesection">
+<div class="text5">
+		<h1 class="sec5">
+			In time, that fear prevailed; it came<br>between him and the page he was<br>supposed to write, the books he<br>tried to read.<br>
+			Letters would crawl about on the<br>page like <span class="ant" style="text-decoration: underline">ants</span>; faces,blurred and<br>faded, objects and people slowly<br>abandoned him.
+		</h1>
+	</div>
+
+
+	<div class="section1">
+		<div class="ants">
+			<div class="hideant"><img src="1x/Asset26.png"></div>
+			<img src="1x/Artboard12.png" class="bigants">
+			<img src="phone/5.png" class="phone5">
+			<!-- <img src="phone/as/Asset35.png" class="bugs"> -->
+		</div>
+	</div>
+</div>
+  <!-- section 6  -->
+<div class="wholesection">
+<div class="text6">
+		<h1 id = "text" class="sec6">
+			 He realized that he<br>
+			was unable to remember the<br>shapes, sounds, and colors of<br>his dreams; there were no<br>shapes, colors, or<br>
+			sounds, nor were the dreams dreams.
+		</h1>
+	</div>
+
+
+	<div class="section1">
+		<div class="floating">
+			<img class = "objs" src="1x/Asset9.png">
+			<img src="1x/Asset21.png" class="shapes">
+			<img src="phone/6.png" class="phone6">
+		</div>
+	</div>
+</div>
+<!-- section 7 -->
+ <div class="wholesection">
+
+	<div class="section1">
+		<div class="voices">
+			<img src="1x/Asset14.png" class="voice">
+			<img src="phone/8.png" class="phone7">
+		</div>
+	</div>
+</div> 
+<!-- section 8 -->
+
+
+	<div class="section1">
+		<div class="hand">
+			<img src="1x/Asset20.png" class="shadow">
+			<img src="phone/9.png" class="phone8">
+		</div>
+	</div>
+</div> 
+<!-- section 9  -->
+ <div class="wholesection">
+
+ 	<div class="text9">
+		<h1 class="sec9">
+			 Somehow he sensed that it was his<br>duty to leave all these things behind;<br>now he belonged to this new<br>
+			world, removed from<br>
+			<span class = "word"> Past, </span><span class="word"> Present </span><span class="word"> & </span><span class="word">Future. </span>
+		</h1>
+	</div>
+
+	<div class="section1">
+		<div class="present">
+			<img src="1x/Asset22.png" class="time">
+			<img src="phone/7,10,13.png" class="phone9">
+		</div>
+	</div>
+</div> 
+<!-- section 10 -->
+ <div class="wholesection">
+
+ 	<div class="text10">
+		<h1 class="sec10">
+			  Little by little this new world<br>surrounded him. He suffered many<br>agonies, journeyed through realms of<br> desperation and loneliness‐appalling<br>
+			peregrinations, for they transcended<br>all his previous perceptions,<br> memories, and
+		</h1>
+	</div>
+
+	<div class="section1">
+		<div class="present">
+			<img src="1x/Artboard1.png" class="round">
+			<img src="phone/11.png" class="phone10">
+		</div>
+	</div>
+</div> 
+<!-- section 11 -->
+ <div class="wholesection">
+
+	<div class="section1">
+		<div class="hopes">
+			<img src="1x/Artboard4.png" class="hope">
+			<img src="phone/12.png" class="phone11">
+		</div>
+	</div>
+</div> 
+<!-- section 12 -->
+<div class="wholesection">
+
+ 	<div class="text12">
+		<h1 class="sec12">
+			  All horror lay in<br>
+			their newness and their splendor. He<br>had deserved grace‐he had earned it;<br>every second since the<br>
+			moment of his <a href="#heaven"><span style="text-decoration: underline">death,</span></a>
+		</h1>
+	</div>
+
+	<div class="section1">
+		<div class="deaths">
+			<img src="1x/Asset22.png" class="die">
+			<img src="phone/7,10,13.png" class="phone12">
+		</div>
+	</div>
+</div>
+ <!-- section 13 -->
+ <div class="wholesection">
+
+ 	<div class="text13">
+		<h1 class="sec13">
+			  he had been in heaven.
+		</h1>
+	</div>
+
+	<div  id = "heaven" class="section1">
+		<div class="deaths">
+			<img src="1x/Asset18.png" class="hea">
+			<img src="phone/14.png" class="phone13">
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+
+$('.ant').on("click",function(e){
+	 $('.hideant').toggleClass("show");
+	 });
+
+$('.ded').on("click",function(e){
+	 $('.hide').toggleClass("show");
+	 });
+
+setTimeout(fade_out,5000);
+function fade_out(){
+	$(".objs").fadeOut().empty();
+}
+
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.sec9 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.sec9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 2000
+  });
+
+</script>	
+</body>
+</html>
