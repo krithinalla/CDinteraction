@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scrollIntoView()</title>
+</head>
+<style type="text/css">
+	*{
+		background-color: #c6e2ff;
+	}
+	#main {
+		height:100vh;
+		width:100vw;
+		overflow-x:scroll;
+		overflow-y:hidden;
+		white-space:nowrap;
+		scroll-snap-type: x mandatory;
+	}
+	.featured {
+		display:inline-block;
+		width:100%;
+		/*height:auto;*/
+		overflow:hidden;
+		vertical-align:top;
+		margin:0;
+		top: 0;
+		scroll-snap-align: start;
+	}
+	.featured img {
+		object-fit: contain;
+		width:100%;
+		scroll-snap-align: center;
+		display: flex;
+	}
+
+	
+
+	#selector {
+		margin:10% 45%;
+		text-align:center;
+		position: absolute;
+		width: 10%;
+	}
+	.option {
+		display:inline-block;
+		margin:0% 0.5%;
+		width:1em;
+		height:1em;
+		/*background-color:#f6f1bc;*/
+		/*border-radius:50%;*/
+		cursor:pointer;
+		transition:0.25s ease-in-out;
+
+	
+	}
+	/*.option:hover {
+		background-color:#e35d6a	}*/
+</style>
+<body>
+
+	<div id='selector'>
+	<div class='option' id='option1'>☀️</div>
+	<div class='option' id='option2'>🌞</div>
+	<div class='option' id='option3'>🌙</div>
+	<div class='option' id='option4'>💫</div>
+</div>
+
+<div id='main'>
+	<div class='featured' id='post1'>
+		<img src="1.jpg">
+	</div>
+	<div class='featured' id='post2'>
+		<img src="2.jpg">
+	</div>
+	<div class='featured' id='post3'>
+		<img src="3.jpg">
+	</div>
+	<div class='featured' id='post4'>
+		<img src="4.jpg">
+	</div>
+</div>
+
+
+
+</body>
+<script type="text/javascript">
+
+let options = document.querySelectorAll('.option')
+	post1 = document.querySelector('#post1')
+	post2 = document.querySelector('#post2')
+	post3 = document.querySelector('#post3')
+	post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+		
+	item.onclick=function() {
+		id=item.id
+		console.log(id)
+		split = id.split('option')
+		console.log(split)
+		ref = split[1]
+		console.log(ref)
+		console.log('click')
+		element = document.querySelector('#post'+ref)
+		element.scrollIntoView({
+			behavior: "smooth"
+		})
+	}
+})
+
+</script>
+</html>
