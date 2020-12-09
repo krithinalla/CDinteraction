@@ -1,0 +1,200 @@
+
+#app {
+  height: 100%;
+  perspective-origin: 50% 50%;
+  perspective: 800px;
+}
+
+#alert {
+    opacity:0;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    left:auto;
+    width:100%;
+    height:100vh;
+    bottom:-100vh;
+    transition:2s cubic-bezier(.01,1.49,1,.38);
+    /*transition:0.5s cubic-bezier(.17,.67,.57,-0.05);*/
+    cursor:pointer;
+  }
+
+  .aligner {
+    width:15%;
+    color:white;
+    text-align:center;
+    border-radius:1em;
+    background-color:#000000;
+    box-shadow:0em 0em 5em white;
+    transition:0.5s ease-in-out;
+  }
+
+
+.card {
+  width: 199px;
+  height: 198px;
+  background-color: white;
+  /*background-image: url(https://images.pokemontcg.io/smp/SM156.png);*/
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  /*box-shadow: 0 0 6px 2px rgba(255, 230, 0, 0.75), 0 35px 25px -15px rgba(0, 0, 0, 0.5);*/
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 20px 10px;
+  
+  // Animation ready
+  will-change: transform;
+  
+  transition: transform 100ms ease;
+  transition-property: transform;
+  
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  
+  transform: translate3d(0%, 0%, -400px);
+  
+  &:hover {
+    z-index: 2;
+  }
+}
+
+
+  
+.card.charizard {
+  background-image: url("cardpngs/x1/Asset3.png");
+}
+.card.mewtwo {
+  background-image: url("cardpngs/x1/Asset5.png");
+  &:before,
+  &:after {
+    animation-delay: 0.33s;
+  }
+}
+.card.dragonite {
+  background-image: url("cardpngs/x1/Asset7.png");
+  &:before,
+  &:after {
+    animation-delay: 0.66s;
+  }
+}
+
+.card.card9 {
+  background-image: url("cardpngs/x1/Asset9.png");
+}
+
+
+
+.card:before,
+  .card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-image: linear-gradient(
+      115deg,
+      transparent 0%,
+      rgb(0, 231, 255) 30%,
+      rgb(255, 0, 231) 70%,
+      transparent 100%
+    );
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    mix-blend-mode: color-dodge;
+    opacity: 0;
+    z-index: 1;
+    transform: translate3d(0,0,0);
+    animation: holoGradient 15s ease infinite;
+  }
+  .card:after {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif");
+    background-position: center;
+    background-size: 180%;
+    mix-blend-mode: color-dodge;
+    opacity: 0;
+    z-index: 2;
+    animation: holoSparkle 20s ease infinite;
+  }
+
+  .card.active:before {
+    opacity: 0.5;
+    animation: none;
+    transition: none;
+    background-image: linear-gradient(
+      115deg,
+      transparent 0%,
+      transparent 25%,
+      rgb(0, 231, 255) 45%,
+      rgb(255, 0, 231) 55%,
+      transparent  70%,
+      transparent 100%
+    );
+  }
+
+  @keyframes holoSparkle {
+    0% {
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.5;
+    }
+    95% {
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes holoGradient {
+    3% {
+      opacity: 0;
+    }
+    5% {
+      background-position: 0% 0%;
+    }
+    7% {
+      opacity: 0.5;
+    }
+    9% {
+      background-position: 100% 100%;
+    }
+    11% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+      background-position: 100% 100%;
+    }
+    55% {
+      opacity: 0.3;
+    }
+    70% {
+      opacity: 0;
+      background-position: 0% 0%;
+    }
+  }
+
+body {
+  color: white;
+  background: white;
+  font-family: "Heebo", sans-serif;
+  display: flex;
+  justify-content: center;
+  // height: 100%;
+  text-align: center;
+}
+html {
+  height: 100%;
+}
+
+h1 {
+  display: block;
+  margin-top: 30px;
+}

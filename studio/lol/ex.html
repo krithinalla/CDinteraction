@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="exs.css">
+  <title>Document</title>
+</head>
+<body id=app>
+  <h1>Pokemon Card, Holo Effect</h1>
+  <p>Checkout <a href="https://codepen.io/NyX/details/ydKWgM">Sabin's fork of my original version</a> with some 3D animations! (its slow performance, but pretty)</p>
+
+  <div class="card">
+  </div>
+  <span class="operator">+</span>
+  <div class="card">
+    <span>+ color-dodge</span>
+  </div>
+  <span class="operator">+</span>
+  <div class="card">
+    <span>+ color-dodge</span>
+  </div>
+  <span class="operator">=</span>
+  <div class="card"></div>
+
+  <style class="hover"></style>
+<script type="text/javascript">
+  var $cards = $(".card");
+var $style = $(".hover");
+$cards.on("mousemove", function(e) {
+  var $card = $(this);
+  var l = e.offsetX;
+  var t = e.offsetY;
+  var h = $card.height();
+  var w = $card.width();
+  var lp = Math.abs(Math.floor(100 / w * l)-100);
+  var tp = Math.abs(Math.floor(100 / h * t)-100);
+  var bg = `background-position: ${lp}% ${tp}%;`
+  var style = `.card.active:before { ${bg} }`
+  $cards.removeClass("active");
+  $card.addClass("active");
+  $style.html(style);
+}).on("mouseout", function() {
+  $cards.removeClass("active");
+});
+</script>
+</body>
+</html>
