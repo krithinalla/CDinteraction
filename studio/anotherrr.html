@@ -30,11 +30,11 @@
 </body>
 <script type="text/javascript">
 
-document.getElementById("groww").onclick = function(){
+// document.getElementById("grow").onclick = function(){
 
-	document.getElementById('alert');
-    img.style.visibility = 'visible';
-}
+// 	document.getElementById('alert');
+//     img.style.visibility = 'visible';
+// }
 // function showimage(){
 
 // 	let img = document.getElementById('alert');
@@ -46,6 +46,26 @@ document.getElementById("groww").onclick = function(){
 //  return true;
 
 // }
+	
+	var check = false;
+if(!check){
+    document.getElementById("grow").onclick = function(){
+
+    document.getElementById('alert');
+    img.style.visibility = 'visible';
+    
+    }
+    check = true;
+
+} else if(check) {
+    document.getElementById("grow").onclick = function(){
+
+        document.getElementById('alert');
+        img.style.visibility = 'hidden';
+        
+        }
+        check = false;
+}
 
 </script>
 </html>
