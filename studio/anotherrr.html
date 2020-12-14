@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Document</title>
+</head>
+<style type="text/css">
+/*set0*/
+	.grow{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	}
+
+	.grow:hover{
+		transform: scale(1.4);
+	}
+
+	#alert{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	.empty{
+		padding: 10%;
+	}
+/*set1*/
+	.grow1{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow1:hover{
+		transform: scale(1.4);
+	}
+
+	#alert1{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+/*set2*/
+.grow2{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow2:hover{
+		transform: scale(1.4);
+	}
+
+	#alert2{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+/*set3*/
+.grow3{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow3:hover{
+		transform: scale(1.4);
+	}
+
+	#alert3{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set4*/
+.grow4{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow4:hover{
+		transform: scale(1.4);
+	}
+
+	#alert4{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set5*/
+.grow5{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow5:hover{
+		transform: scale(1.4);
+	}
+
+	#alert5{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set6*/
+.grow6{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow6:hover{
+		transform: scale(1.4);
+	}
+
+	#alert6{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set7*/
+.grow7{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow7:hover{
+		transform: scale(1.4);
+	}
+
+	#alert7{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set8*/
+.grow8{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow8:hover{
+		transform: scale(1.4);
+	}
+
+	#alert8{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set9*/
+.grow9{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow9:hover{
+		transform: scale(1.4);
+	}
+
+	#alert9{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set10*/
+.grow10{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow10:hover{
+		transform: scale(1.4);
+	}
+
+	#alert10{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set11*/
+.grow11{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow11:hover{
+		transform: scale(1.4);
+	}
+
+	#alert11{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set12*/
+.grow12{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow12:hover{
+		transform: scale(1.4);
+	}
+
+	#alert12{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set13*/
+.grow13{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow13:hover{
+		transform: scale(1.4);
+	}
+
+	#alert13{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set14*/
+.grow14{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow14:hover{
+		transform: scale(1.4);
+	}
+
+	#alert14{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set15*/
+.grow15{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow15:hover{
+		transform: scale(1.4);
+	}
+
+	#alert15{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set16*/
+.grow16{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow16:hover{
+		transform: scale(1.4);
+	}
+
+	#alert16{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set17*/
+.grow17{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow17:hover{
+		transform: scale(1.4);
+	}
+
+	#alert17{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set18*/
+.grow18{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow18:hover{
+		transform: scale(1.4);
+	}
+
+	#alert18{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set19*/
+.grow19{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow19:hover{
+		transform: scale(1.4);
+	}
+
+	#alert19{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set20*/
+.grow20{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow20:hover{
+		transform: scale(1.4);
+	}
+
+	#alert20{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set21*/
+.grow21{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow21:hover{
+		transform: scale(1.4);
+	}
+
+	#alert21{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set22*/
+.grow22{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow22:hover{
+		transform: scale(1.4);
+	}
+
+	#alert22{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	/*set23*/
+.grow23{
+		transition: all .2s ease-in-out;
+		padding-left: 25%;
+		padding-top: 15%;
+	
+	}
+
+	.grow23:hover{
+		transform: scale(1.4);
+	}
+
+	#alert23{
+		visibility: hidden;
+		padding-left: 20%;
+	}
+
+	
+
+</style>
+<body>
+
+	
+<!-- set0 -->
+	<img id = "groww"class="grow" src="cardpngs/x1/Asset3.png">
+		<img id = "alert" src="cardpngs/x1/Asset4.png" >
+
+		<div class="empty"></div>
+<!-- set1 -->
+	<img id = "groww1"class="grow1" src="cardpngs/x1/Asset5.png">
+		<img id="alert1" src="cardpngs/x1/Asset6.png" >
+
+		<div class="empty"></div>
+<!-- set2 -->
+	<img id = "groww2"class="grow2" src="cardpngs/x1/Asset7.png">
+		<img id = "alert2" src="cardpngs/x1/Asset8.png" >
+
+		<div class="empty"></div>
+<!-- set3 -->
+	<img id = "groww3"class="grow3" src="cardpngs/x1/Asset9.png">
+		<img id="alert3" src="cardpngs/x1/Asset10.png" >
+
+<div class="empty"></div>
+
+<!-- set4 -->
+	<img id = "groww4"class="grow4" src="cardpngs/x1/Asset11.png">
+		<img id="alert4" src="cardpngs/x1/Asset12.png" >
+
+		<div class="empty"></div>
+<!-- set5 -->
+	<img id = "groww5"class="grow5" src="cardpngs/x1/Asset13.png">
+		<img id="alert5" src="cardpngs/x1/Asset14.png" >
+
+		<div class="empty"></div>
+
+<!-- set6 -->
+	<img id = "groww6"class="grow6" src="cardpngs/x1/Asset15.png">
+		<img id="alert6" src="cardpngs/x1/Asset16.png" >
+		<div class="empty"></div>
+
+<!-- set7 -->
+	<img id = "groww7"class="grow7" src="cardpngs/x1/Asset17.png">
+		<img id="alert7" src="cardpngs/x1/Asset18.png" >
+		<div class="empty"></div>
+
+<!-- set8 -->
+	<img id = "groww8"class="grow8" src="cardpngs/x1/Asset19.png">
+		<img id="alert8" src="cardpngs/x1/Asset20.png" >
+		<div class="empty"></div>
+
+<!-- set9 -->
+	<img id = "groww9"class="grow9" src="cardpngs/x1/Asset21.png">
+		<img id="alert9" src="cardpngs/x1/Asset22.png" >
+
+		<div class="empty"></div>
+
+<!-- set10 -->
+	<img id = "groww10"class="grow10" src="cardpngs/x1/Asset23.png">
+		<img id="alert10" src="cardpngs/x1/Asset24.png" >
+
+		<div class="empty"></div>
+
+<!-- set11 -->
+	<img id = "groww11"class="grow11" src="cardpngs/x1/Asset25.png">
+		<img id="alert11" src="cardpngs/x1/Asset26.png" >
+
+		<div class="empty"></div>
+
+<!-- set12 -->
+	<img id = "groww12"class="grow12" src="cardpngs/x1/Asset27.png">
+		<img id="alert12" src="cardpngs/x1/Asset28.png" >
+
+		<div class="empty"></div>
+<!-- set13 -->
+	<img id = "groww13"class="grow13" src="cardpngs/x1/Asset29.png">
+		<img id="alert13" src="cardpngs/x1/Asset30.png" >
+
+		<div class="empty"></div>
+<!-- set14 -->
+	<img id = "groww14"class="grow14" src="cardpngs/x1/Asset31.png">
+		<img id="alert14" src="cardpngs/x1/Asset32.png" >
+
+		<div class="empty"></div>
+<!-- set15 -->
+	<img id = "groww15"class="grow15" src="cardpngs/x1/Asset33.png">
+		<img id="alert15" src="cardpngs/x1/Asset34.png" >
+
+		<div class="empty"></div>
+<!-- set16 -->
+	<img id = "groww16"class="grow16" src="cardpngs/x1/Asset35.png">
+		<img id="alert16" src="cardpngs/x1/Asset36.png" >
+
+		<div class="empty"></div>
+<!-- set17 -->
+	<img id = "groww17"class="grow17" src="cardpngs/x1/Asset37.png">
+		<img id="alert17" src="cardpngs/x1/Asset38.png" >
+
+		<div class="empty"></div>
+<!-- set18 -->
+	<img id = "groww18"class="grow18" src="cardpngs/x1/Asset39.png">
+		<img id="alert18" src="cardpngs/x1/Asset40.png" >
+
+		<div class="empty"></div>
+<!-- set19 -->
+	<img id = "groww19"class="grow19" src="cardpngs/x1/Asset41.png">
+		<img id="alert19" src="cardpngs/x1/Asset42.png" >
+
+		<div class="empty"></div>
+<!-- set20 -->
+	<img id = "groww20"class="grow20" src="cardpngs/x1/Asset43.png">
+		<img id="alert20" src="cardpngs/x1/Asset44.png" >
+
+		<div class="empty"></div>
+<!-- set21 -->
+	<img id = "groww21"class="grow21" src="cardpngs/x1/Asset45.png">
+		<img id="alert21" src="cardpngs/x1/Asset46.png" >
+
+		<div class="empty"></div>
+<!-- set22 -->
+	<img id = "groww22"class="grow22" src="cardpngs/x1/Asset47.png">
+		<img id="alert22" src="cardpngs/x1/Asset48.png" >
+
+		<div class="empty"></div>
+<!-- set23 -->
+	<img id = "groww23"class="grow23" src="cardpngs/x1/Asset49.png">
+		<img id="alert23" src="cardpngs/x1/Asset50.png" >
+
+		<div class="empty"></div>
+
+</body>
+<script type="text/javascript">
+
+
+//set0
+    document.getElementById("groww").onclick = function(){
+      var state = document.getElementById('alert').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert').style.visibility = state;   
+    }
+
+//set1
+    document.getElementById("groww1").onclick = function(){
+      var state = document.getElementById('alert1').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert1').style.visibility = state;   
+    }
+//set2
+document.getElementById("groww2").onclick = function(){
+      var state = document.getElementById('alert2').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert2').style.visibility = state;   
+    }
+
+ //set3
+document.getElementById("groww3").onclick = function(){
+      var state = document.getElementById('alert3').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert3').style.visibility = state;   
+    }
+
+     //set4
+document.getElementById("groww4").onclick = function(){
+      var state = document.getElementById('alert4').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert4').style.visibility = state;   
+    }
+
+     //set5
+document.getElementById("groww5").onclick = function(){
+      var state = document.getElementById('alert5').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert5').style.visibility = state;   
+    }
+
+     //set6
+document.getElementById("groww6").onclick = function(){
+      var state = document.getElementById('alert6').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert6').style.visibility = state;   
+    }
+
+     //set7
+document.getElementById("groww7").onclick = function(){
+      var state = document.getElementById('alert7').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert7').style.visibility = state;   
+    }
+
+     //set8
+document.getElementById("groww8").onclick = function(){
+      var state = document.getElementById('alert8').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert8').style.visibility = state;   
+    }
+
+     //set9
+document.getElementById("groww9").onclick = function(){
+      var state = document.getElementById('alert9').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert9').style.visibility = state;   
+    }
+
+     //set10
+document.getElementById("groww10").onclick = function(){
+      var state = document.getElementById('alert10').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert10').style.visibility = state;   
+    }
+
+     //set11
+document.getElementById("groww11").onclick = function(){
+      var state = document.getElementById('alert11').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert11').style.visibility = state;   
+    }
+
+     //set12
+document.getElementById("groww12").onclick = function(){
+      var state = document.getElementById('alert12').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert12').style.visibility = state;   
+    }
+
+     //set13
+document.getElementById("groww13").onclick = function(){
+      var state = document.getElementById('alert13').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert13').style.visibility = state;   
+    }
+
+     //set14
+document.getElementById("groww14").onclick = function(){
+      var state = document.getElementById('alert14').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert14').style.visibility = state;   
+    }
+
+     //set15
+document.getElementById("groww15").onclick = function(){
+      var state = document.getElementById('alert15').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert15').style.visibility = state;   
+    }
+
+     //set16
+document.getElementById("groww16").onclick = function(){
+      var state = document.getElementById('alert16').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert16').style.visibility = state;   
+    }
+
+     //set17
+document.getElementById("groww17").onclick = function(){
+      var state = document.getElementById('alert17').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert17').style.visibility = state;   
+    }
+
+     //set18
+document.getElementById("groww18").onclick = function(){
+      var state = document.getElementById('alert18').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert18').style.visibility = state;   
+    }
+
+     //set19
+document.getElementById("groww19").onclick = function(){
+      var state = document.getElementById('alert19').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert19').style.visibility = state;   
+    }
+
+     //set20
+document.getElementById("groww20").onclick = function(){
+      var state = document.getElementById('alert20').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert20').style.visibility = state;   
+    }
+
+     //set21
+document.getElementById("groww21").onclick = function(){
+      var state = document.getElementById('alert21').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert21').style.visibility = state;   
+    }
+
+     //set22
+document.getElementById("groww22").onclick = function(){
+      var state = document.getElementById('alert22').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert22').style.visibility = state;   
+    }
+
+     //set23
+document.getElementById("groww23").onclick = function(){
+      var state = document.getElementById('alert23').style.visibility;
+      console.log('current state;' + state)
+      if(state == 'visible') {
+      	state = 'hidden';
+      } else {
+      	state = 'visible';
+      }
+      console.log('changing to;' + state)
+      document.getElementById('alert23').style.visibility = state;   
+    }
+
+</script>
+</html>
