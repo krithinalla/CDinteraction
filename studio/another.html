@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Document</title>
+</head>
+<style type="text/css">
+
+	.grow{
+		transition: all .2s ease-in-out;
+		padding-left: 20%;
+		padding-top: 20%;
+	}
+
+	.grow:hover{
+		transform: scale(1.2);
+	}
+
+	#alert {
+		opacity:0;
+		position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		left:auto;
+		width:100%;
+		height:100%;
+		bottom:-100vh;
+		transition:2s cubic-bezier(.01,1.49,1,.38);
+		/*transition:0.5s cubic-bezier(0,1.22,.81,1.25);*/
+		cursor:pointer;
+	}
+
+	.aligner {
+		width:15%;
+		color:white;
+		text-align:center;
+		border-radius:1em;
+		box-shadow:0em 0em 5em white;
+		transition:0.5s ease-in-out;
+	}
+
+	.grow1{
+		transition: all .2s ease-in-out;
+		text-align: center;
+		padding-left: 10%;
+	}
+
+	.grow1:hover{
+		transform: scale(1.2);
+	}
+
+	#alert1 {
+		opacity:0;
+		position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		left:auto;
+		width:100%;
+		height:100%;
+		bottom:-100vh;
+		transition:2s cubic-bezier(.01,1.49,1,.38);
+		/*transition:0.5s cubic-bezier(0,1.22,.81,1.25);*/
+		cursor:pointer;
+	}
+
+	.aligner1 {
+		width:15%;
+		color:white;
+		text-align:center;
+		border-radius:1em;
+		box-shadow:0em 0em 5em white;
+		transition:0.5s ease-in-out;
+	}
+
+	.grow2{
+		transition: all .2s ease-in-out;
+		text-align: center;
+		padding-left: 10%;
+	}
+
+	.grow2:hover{
+		transform: scale(1.2);
+	}
+
+	#alert2 {
+		opacity:0;
+		position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		left:auto;
+		width:100%;
+		height:100%;
+		bottom:-100vh;
+		transition:2s cubic-bezier(.01,1.49,1,.38);
+		/*transition:0.5s cubic-bezier(0,1.22,.81,1.25);*/
+		cursor:pointer;
+	}
+
+	.aligner2 {
+		width:15%;
+		color:white;
+		text-align:center;
+		border-radius:1em;
+		box-shadow:0em 0em 5em white;
+		transition:0.5s ease-in-out;
+	}
+
+	.emmpty{
+		padding: 10%;
+	}
+
+	.grow3{
+		transition: all .2s ease-in-out;
+		padding-left: 20%;
+		padding-top: 20%;
+	}
+
+	.grow3:hover{
+		transform: scale(1.2);
+	}
+
+	#alert3 {
+		opacity:0;
+		position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		left:auto;
+		width:100%;
+		height:100%;
+		bottom:-100vh;
+		transition:2s cubic-bezier(.01,1.49,1,.38);
+		/*transition:0.5s cubic-bezier(0,1.22,.81,1.25);*/
+		cursor:pointer;
+	}
+
+	.aligner3 {
+		width:15%;
+		color:white;
+		text-align:center;
+		border-radius:1em;
+		box-shadow:0em 0em 5em white;
+		transition:0.5s ease-in-out;
+	}
+
+	.grow4{
+		transition: all .2s ease-in-out;
+		text-align: center;
+		padding-left: 10%;
+	}
+
+	.grow4:hover{
+		transform: scale(1.2);
+	}
+
+	#alert4 {
+		opacity:0;
+		position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		left:auto;
+		width:100%;
+		height:100%;
+		bottom:-100vh;
+		transition:2s cubic-bezier(.01,1.49,1,.38);
+		/*transition:0.5s cubic-bezier(0,1.22,.81,1.25);*/
+		cursor:pointer;
+	}
+
+	.aligner4 {
+		width:15%;
+		color:white;
+		text-align:center;
+		border-radius:1em;
+		box-shadow:0em 0em 5em white;
+		transition:0.5s ease-in-out;
+	}
+
+	.grow5{
+		transition: all .2s ease-in-out;
+		text-align: center;
+		padding-left: 10%;
+	}
+
+	.grow5:hover{
+		transform: scale(1.2);
+	}
+
+	#alert5 {
+		opacity:0;
+		position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		left:auto;
+		width:100%;
+		height:100%;
+		bottom:-100vh;
+		transition:2s cubic-bezier(.01,1.49,1,.38);
+		/*transition:0.5s cubic-bezier(0,1.22,.81,1.25);*/
+		cursor:pointer;
+		
+	}
+
+	.aligner5 {
+		width:15%;
+		color:white;
+		text-align:center;
+		border-radius:1em;
+		box-shadow:0em 0em 5em white;
+		transition:0.5s ease-in-out;
+	}
+		
+</style>
+<body>
+	
+		<img class="grow" src="cardpngs/x1/Asset3.png">
+		<div id="alert">
+		<img class="aligner" src="cardpngs/x1/Asset4.png">
+		</div>
+
+		<img class="grow1" src="cardpngs/x1/Asset5.png">
+		<div id="alert1">
+		<img class="aligner1" src="cardpngs/x1/Asset6.png">
+		</div>
+
+		<img class="grow2" src="cardpngs/x1/Asset7.png">
+		<div id="alert2">
+		<img class="aligner2" src="cardpngs/x1/Asset8.png">
+		</div>
+
+		<div class="emmpty"></div>
+
+		<img class="grow3" src="cardpngs/x1/Asset9.png">
+		<div id="alert3">
+		<img class="aligner3" src="cardpngs/x1/Asset10.png">
+		</div>
+
+		<img class="grow4" src="cardpngs/x1/Asset11.png">
+		<div id="alert4">
+		<img class="aligner4" src="cardpngs/x1/Asset12.png">
+		</div>
+
+		<img class="grow5" src="cardpngs/x1/Asset13.png">
+		<div id="alert5">
+		<img class="aligner5" src="cardpngs/x1/Asset14.png">
+		</div>
+
+</body>
+<script type="text/javascript">
+
+//card 0 
+grow = document.querySelector('.grow')
+alert = document.querySelector('#alert')
+
+grow.onclick=function() {
+	alert.style.opacity='1'
+	alert.style.bottom='0'
+}
+
+alert.onclick=function() {
+	alert.style.opacity='0'
+	alert.style.bottom='-100vh'
+}
+
+//card 1
+grow1 = document.querySelector('.grow1')
+alert1 = document.querySelector('#alert1')
+
+grow1.onclick=function() {
+	alert1.style.opacity='1'
+	alert1.style.bottom='0'
+}
+
+alert1.onclick=function() {
+	alert1.style.opacity='0'
+	alert1.style.bottom='-100vh'
+}
+
+//card 2
+grow2 = document.querySelector('.grow2')
+alert2 = document.querySelector('#alert2')
+
+grow2.onclick=function() {
+	alert2.style.opacity='1'
+	alert2.style.bottom='0'
+}
+
+alert2.onclick=function() {
+	alert2.style.opacity='0'
+	alert2.style.bottom='-100vh'
+}
+
+//card 3
+grow3 = document.querySelector('.grow3')
+alert3 = document.querySelector('#alert3')
+
+grow3.onclick=function() {
+	alert3.style.opacity='1'
+	alert3.style.bottom='0'
+}
+
+alert3.onclick=function() {
+	alert3.style.opacity='0'
+	alert3.style.bottom='-100vh'
+}
+
+//card 4
+grow4 = document.querySelector('.grow4')
+alert4 = document.querySelector('#alert4')
+
+grow4.onclick=function() {
+	alert4.style.opacity='1'
+	alert4.style.bottom='0'
+}
+
+alert4.onclick=function() {
+	alert4.style.opacity='0'
+	alert4.style.bottom='-100vh'
+}
+
+//card 5
+grow5 = document.querySelector('.grow5')
+alert5 = document.querySelector('#alert5')
+
+grow5.onclick=function() {
+	alert5.style.opacity='1'
+	alert5.style.bottom='0'
+}
+
+alert5.onclick=function() {
+	alert5.style.opacity='0'
+	alert5.style.bottom='-100vh'
+}
+
+
+</script>
+
+</html>
