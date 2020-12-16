@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Sticky</title>
+</head>
+<style type="text/css">
+
+	body,html {
+		height: 100%;
+		margin: 0;	
+	}
+
+	.ground{
+		background-image: url("USE/landing/bg.png");
+		height: 100%;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	.stick{
+		position: absolute;
+		padding-left: 35%;
+		padding-top: 10%;
+	}
+
+	.liv{
+		position: absolute;
+		padding-left: 30%;
+		padding-top: 24%;
+	}
+
+	
+	.col{
+		position: absolute;
+		right: 24%;
+		padding-top: 25%;
+	}
+
+	
+	.made{
+		position: absolute;
+		bottom: 0;
+		padding-left: 45%;
+	}
+
+	.date{
+		position: absolute;
+		right: 0;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+	.sticker {
+		position: absolute;
+		right: 0;
+		padding-top: 8%;
+		padding-right: 10%;
+	}
+
+	.sticker:hover{
+		transform:scale(1.1);
+	}
+
+	.sensor {
+		position: fixed;
+		right: 0;
+	}
+
+	.sensor:hover{
+		transform:scale(1.1);
+	}
+
+	.pillow {
+		position: absolute;
+		bottom: 0;
+		padding-bottom: 10%;
+	}
+
+	.pillow:hover{
+		transform:scale(1.1);
+	}
+
+	.pig {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		padding-right: 15%;
+	}
+
+	.pig:hover{
+		transform:scale(1.1);
+	}
+
+	.ml{
+		position: absolute;
+		padding-left: 25%;
+		padding-top: 3%;
+	}
+
+	.ml:hover{
+		transform:scale(1.1);
+	}
+
+	.bulb{
+		position: absolute;
+		bottom: 0;
+		padding-left: 35%;
+		padding-bottom: 5%;
+	}
+
+	.bulb:hover{
+		transform:scale(1.1);
+	}
+
+	.time{
+		position: absolute;
+		position: center;
+	}
+
+	.time:hover{
+		transform:scale(1.1);
+	}
+</style>
+<body>
+	<div class="stick">
+		<img src="USE/landing/sticky.png">
+	</div>
+	<div class="liv">
+		<img src="USE/landing/living.png">
+	</div>
+	<div class="col">
+		<img src="USE/landing/collection.png">
+	</div>
+	<div class="made">
+		<img src="USE/landing/made.png">
+	</div>
+	<div class="date">
+		<img src="USE/landing/date.png">
+	</div>
+	
+	<a href="page7.html" target="_blank" rel="noopener noreferrer">
+	<div class="sticker">
+		<img src="USE/landing/sticker.png">
+	</div>
+
+	<a href="page4.html" target="_blank" rel="noopener noreferrer">
+	<div class="sensor">
+		<img src="USE/landing/sensor.png">
+	</div>
+	</a>
+
+	<a href="page3.html" target="_blank" rel="noopener noreferrer">
+	<div class="pig">
+		<img src="USE/landing/pig.png">
+	</div>
+	</a>
+
+	<a href="page5.html" target="_blank" rel="noopener noreferrer">
+	<div class="ml">
+		<img src="USE/landing/ml.png">
+	</div>
+	</a>
+
+	<a href="page8.html" target="_blank" rel="noopener noreferrer">
+	<div class="time">
+		<img src="USE/landing/time.png">
+	</div>
+	</a>
+
+	<a href="page6.html" target="_blank" rel="noopener noreferrer">
+	<div class="bulb">
+		<img src="USE/landing/bulb.png">
+	</div>
+	</a>
+
+	<a href="page2.html" target="_blank" rel="noopener noreferrer">
+	<div class="pillow">
+		<img src="USE/landing/pillow.png">
+	</div>
+	</a>
+
+	<div class="ground"></div>
+
+	
+
+<script type="text/javascript">
+
+
+//sensor
+$(document).ready(function(){
+    animateDiv();
+    
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(){
+    var newq = makeNewPosition();
+    var oldq = $('.sensor').offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+    
+    $('.sensor').animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    
+};
+
+function calcSpeed(prev, next) {
+    
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+    
+    var greatest = x > y ? x : y;
+    
+    var speedModifier = 0.1;
+
+    var speed = Math.ceil(greatest/speedModifier);
+
+    return speed;
+
+}
+
+
+
+</script>
+</body>
+</html>
